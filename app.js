@@ -321,6 +321,6 @@ app.get('/delete', function(req, res, next) {
   Server-side notification that the app is running
 ******************************************************************************************************************/
 
-app.listen(app.get('port'), function() {
+app.listen(app.get('port') || process.env.PORT, function() {
 	console.log('Express started on http://localhost:' + app.get('port') + '; press Ctrl-C to terminate.');
 });
