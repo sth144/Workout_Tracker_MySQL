@@ -21,10 +21,10 @@ var pool = mysql.createPool({
 
 	// Database targeting and credentials
 
-	host: 'classmysql.engr.oregonstate.edu',
-	user: 'cs290_hindss',
-	password: '8638',
-	database: 'cs290_hindss'
+	host: 'us-cdbr-iron-east-05.cleardb.net',
+	user: 'bea477a759dfeb',
+	password: '008a20d7',
+	database: 'heroku_2a08e460d696ab6'
 
 });
 

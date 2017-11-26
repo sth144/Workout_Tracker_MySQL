@@ -13,7 +13,7 @@
   Module imports. App definition (express with handlebars)
 ******************************************************************************************************************/
 
-//var mysql = require('./database.js');
+var mysql = require('./database.js');
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
