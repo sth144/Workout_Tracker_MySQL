@@ -1,0 +1,84 @@
+body {
+	background-color: #DDFFEE;
+	color: #666666;
+	font-family: "Courier New", Courier, monospace;
+}
+
+
+
+thead, tbody, th {
+	border: 1px solid #666666;
+}
+
+tr:nth-child(even) {
+	background-color: #FFFFEE;
+}
+
+tr:nth-child(odd) {
+	background-color: #EEFFFF;
+}
+
+input, button {
+	margin: 0.4%;
+	display: inline-block;
+}
+
+
+
+.jumbotron {
+	text-align: center;
+	background-color: #FFDEDD;
+	padding: 1%;
+	margin: 0.5%;
+}
+
+.theme-showcase {
+	padding: 1%;
+	margin: 0.5%;
+
+	margin-left: 21.4%;
+}
+
+.theme-showcase > h1 {
+	margin-left: 4%;
+}
+
+.line {
+	width: 25%;
+	display: block;
+	float: left;
+
+	text-align: center;
+}
+
+.linep1 {
+	width: 10%;
+	display: block;
+	float: left;
+}
+
+.line > button {
+	margin-left: 26%;
+}
+
+.buttons {
+	width: 96px;
+}
+
+.editInputs {
+	width: 60px;
+}
+
+.hidden {
+	display: none;
+}
+
+#insertButton {
+	margin-left: 9.2%;
+	margin-top: 1%;
+}
+
+#resetButton {
+	margin-left: 8%;
+	margin-top: 1.4%;
+}
