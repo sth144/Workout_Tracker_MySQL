@@ -56,7 +56,7 @@ app.get('/', function(req,res,next) {
 
   // Query the database
 
-  /*mysql.pool.query('SELECT * FROM exercises', function(err, rows, fields) {
+  mysql.pool.query('SELECT * FROM exercises', function(err, rows, fields) {
 
     // Error handling
 
@@ -67,10 +67,10 @@ app.get('/', function(req,res,next) {
 
     // Process data and render table
 
-    context.results = JSON.stringify(rows);*/
+    context.results = JSON.stringify(rows);
     res.render('table', context);
 
-//  });
+  });
 
 });
 
@@ -79,7 +79,7 @@ app.get('/', function(req,res,next) {
   Refresh route refreshes the table to reflect the current state of the database 
 ******************************************************************************************************************/
 
-/*app.get('/refresh', function(req,res,next) {
+app.get('/refresh', function(req,res,next) {
 
   // Define context for the local scope
   
@@ -104,14 +104,14 @@ app.get('/', function(req,res,next) {
 
   });
 
-});*/
+});
 
 
 /******************************************************************************************************************
   Reset route deletes all data in the table
 ******************************************************************************************************************/
 
-/*app.get('/reset-table', function(req, res, next) {
+app.get('/reset-table', function(req, res, next) {
 
   // Define context for the local scope
 
@@ -127,14 +127,14 @@ app.get('/', function(req,res,next) {
 
 	res.send();
 
-});*/
+});
 
 
 /******************************************************************************************************************
   Create route drops current table and creates a new one
 ******************************************************************************************************************/
 
-/*app.get('/create-table', function(req, res, next) {
+app.get('/create-table', function(req, res, next) {
 	
   // For debugging
 
@@ -173,14 +173,14 @@ app.get('/', function(req,res,next) {
 
 	});
 
-});*/
+});
 
 
 /******************************************************************************************************************
   Insert route inserts new row with values specified in the query. Could be modified to POST
 ******************************************************************************************************************/
 
-/*app.get('/insert',function(req,res,next) {
+app.get('/insert',function(req,res,next) {
 
   // Define context for the local scope
 
@@ -219,14 +219,14 @@ app.get('/', function(req,res,next) {
 
   res.send();
 
-});*/
+});
 
 
 /******************************************************************************************************************
   Safe update route updates a row in the table
 ******************************************************************************************************************/
 
-/*app.get('/safe-update',function(req,res,next) {
+app.get('/safe-update',function(req,res,next) {
 
   // Define context for the local scope
 
@@ -281,7 +281,7 @@ app.get('/', function(req,res,next) {
 
   res.send();
 
-});*/
+});
 
 
 /******************************************************************************************************************
@@ -289,7 +289,7 @@ app.get('/', function(req,res,next) {
     through a button in the UI
 ******************************************************************************************************************/
 
-/*app.get('/delete', function(req, res, next) {
+app.get('/delete', function(req, res, next) {
 
   // Define context for the local scope
 
@@ -314,7 +314,7 @@ app.get('/', function(req,res,next) {
 
 	});
 
-});*/
+});
 
 
 /******************************************************************************************************************
