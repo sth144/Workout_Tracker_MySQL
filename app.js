@@ -37,7 +37,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
-app.set('port', 8648);
+app.set('port', (process.env.PORT || 5000));
 
 
 /******************************************************************************************************************
@@ -321,6 +321,6 @@ app.get('/delete', function(req, res, next) {
   Server-side notification that the app is running
 ******************************************************************************************************************/
 
-app.listen(app.get('port') || process.env.PORT, function() {
+app.listen(app.get('port'), function() {
 	console.log('Express started on http://localhost:' + app.get('port') + '; press Ctrl-C to terminate.');
 });
