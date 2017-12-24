@@ -73,12 +73,12 @@ input, button {
 	display: none;
 }
 
+.dataButton {
+	margin-left: 8%;
+	margin-top: 1.4%;
+}
+
 #insertButton {
 	margin-left: 9.2%;
 	margin-top: 1%;
-}
-
-#resetButton {
-	margin-left: 8%;
-	margin-top: 1.4%;
 }

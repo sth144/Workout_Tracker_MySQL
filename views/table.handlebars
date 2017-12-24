@@ -7,8 +7,8 @@
 		Name&nbsp;&nbsp;&nbsp;<input id="name" type="text" value="Squats" name="name"><br>
 		Reps&nbsp;&nbsp;&nbsp;<input id="reps" type="text" value="20" name="reps"><br>
 		Weight&nbsp;<input id="weight" type="text" value="50" name="weight"><br>
-		Unit&nbsp;&nbsp;&nbsp;<input id="unit" type="text" value="kg" name="unit"><br>	
-		Date&nbsp;&nbsp;&nbsp;<input id="date" type="text" value="1989-08-08" name="date"><br>						
+		Unit&nbsp;&nbsp;&nbsp;<input id="unit" type="text" value="kg" name="unit"><br>
+		Date&nbsp;&nbsp;&nbsp;<input id="date" type="text" value="1989-08-08" name="date"><br>
 		<button id="insertButton">Insert</button>
 	</form>
 	</div>
@@ -16,24 +16,30 @@
 	<div id="tableDiv">
 	<h1>MySQL Data</h1>
 
-	<table>
+	<table id="myTable">
 		<thead>
-			<th class="hidden">ID
-			<th>Name
-			<th>Reps
-			<th>Weight
-			<th>Unit
-			<th>Date
+			<tr>
+				<th class="hidden">ID
+				<th>Name
+				<th>Reps
+				<th>Weight
+				<th>Unit
+				<th>Date
+			</tr>
 		</thead>
 		<tbody id="tab">
 		</tbody>
 	</table>
 
+
+
 	<form>
-		<button id="resetButton">Reset Table</button>
+		<!-- Allow user to reset the table -->
+		<button id="resetButton" class="dataButton">Reset Table</button><br>
+		<!-- Allow user to download current workout plan as an .xls file -->
+		<button type="button" class="dataButton" onclick="csvExport()">Download as .csv</button>
 	</form>
 	</div>
 
+
 </div>
-
-
